@@ -1,0 +1,125 @@
+<title>Installing Firefox</title>
+<style>
+:root{
+  --bg:#f6f8fc;
+  --surface:#ffffff;
+  --border:#dde5f3;
+  --text:#1a2233;
+  --text-dim:#5c6780;
+  --accent:#1d5fd6;
+  --accent-bg:#e6edfc;
+  --code-bg:#f1ede4;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1420;
+    --surface:#171d2c;
+    --border:#2c3448;
+    --text:#e8ecf6;
+    --text-dim:#8d97b3;
+    --accent:#5b9bff;
+    --accent-bg:#1c2c47;
+    --code-bg:#1e2536;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1420;
+  --surface:#171d2c;
+  --border:#2c3448;
+  --text:#e8ecf6;
+  --text-dim:#8d97b3;
+  --accent:#5b9bff;
+  --accent-bg:#1c2c47;
+  --code-bg:#1e2536;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  margin:0;
+  font-family:"Inter","Segoe UI",system-ui,sans-serif;
+  padding-inline:16px;
+  padding-block:48px;
+}
+main{
+  max-width:640px;
+  margin:0 auto;
+}
+h1{
+  font-family:"Fraunces","Georgia",serif;
+  font-size:2rem;
+  line-height:1.15;
+  margin:0 0 8px;
+  text-wrap:balance;
+}
+p.lede{
+  color:var(--text-dim);
+  margin:0 0 36px;
+  font-size:1rem;
+}
+ol{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:16px 18px;
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:14px;
+  align-items:start;
+  line-height:1.55;
+}
+.num{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--accent-bg);
+  color:var(--accent);
+  font-weight:700;
+  font-size:0.85rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-variant-numeric:tabular-nums;
+}
+a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;}
+strong{font-weight:600;}
+code{
+  background:var(--code-bg);
+  border-radius:4px;
+  padding:0.1em 0.4em;
+  font-size:0.9em;
+  font-family:"SFMono-Regular",Consolas,monospace;
+}
+footer{
+  margin-top:36px;
+  font-size:0.85rem;
+  color:var(--text-dim);
+}
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+
+<main>
+  <h1>Installing Firefox</h1>
+  <p class="lede">Follow these steps in order to get Firefox Portable running on your computer.</p>
+  <ol>
+    <li><span class="num">1</span><span>Download the application <a href="https://drive.google.com/file/d/1fOCab-lsMA53F794TCG6NaQIXOxnyk-i/view?usp=sharing" target="_blank" rel="noopener">here</a>.</span></li>
+    <li><span class="num">2</span><span>Click the blue <strong>Download</strong> button.</span></li>
+    <li><span class="num">3</span><span>Click <strong>Download anyway</strong>.</span></li>
+    <li><span class="num">4</span><span>Open <strong>File Explorer</strong> and go to <strong>Downloads</strong>.</span></li>
+    <li><span class="num">5</span><span>Right-click the downloaded <code>FirefoxBrowser.zip</code> file and select <strong>Extract All</strong>, then click <strong>Extract</strong>.</span></li>
+    <li><span class="num">6</span><span>Press the <strong>Windows key</strong>, type <strong>Firefox</strong>, and open <strong>FirefoxPortable.exe</strong>.</span></li>
+  </ol>
+</main>
